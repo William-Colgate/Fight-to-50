@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fight to 50</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="Designer.png" />
+  </head>
+  <body
+    class="bg-[url('Designer.jpeg')] bg-cover overflow-y-scroll overflow-x-hidden"
+  >
+    <div class="Homepage min-w-px flex flex-wrap flex-col">
+      <a
+        href="Fightto50.io"
+        class="Title text-shadow-xl bg-gradient-to-r from-teal-400 to-teal-700 flex flex wrap justify-center text-9xl text-center font-bold font-lobster rounded-full text-white shadow-zinc-800 shadow-2xl cursor-pointer hover:text-red-600 transition 10000 hover:border-2 border-blue-700 w-auto px-8 py-7 mx-16 mt-8"
+      >
+        Fight to &nbsp;
+        <span
+          textFifty
+          class="rotate-12 rounded-3xl text-blue-700 hover:text-orange-700 text-11xl transition 500 font-lobster"
+          >50</span
+        >
+      </a>
+      <form class="Playernames flex flex wrap justify-between mx-7 my-16 h-28">
+        <input
+          type="text"
+          placeholder="Enter Nickname Player 1...."
+          class="Playername1 text-5xl font-playfair text-orange-600 rounded-3xl w-auto bg-orange-200 placeholder-opacity-100 text-4xl shadow-2xl px-7 mt-5 hover:border-4 border-neutral-600"
+        />
+        <input
+          type="text"
+          placeholder="Enter Nickname Player 2...."
+          class="Playername2 text-5xl font-playfair text-blue-700 rounded-3xl w-auto bg-blue-200 text-4xl shadow-2xl px-7 mt-5 hover:border-4 border-neutral-600"
+        />
+      </form>
+
+      <div class="Homepagebuttons flex flex-wrap flex-col gap-10 py-12">
+        <button
+          class="Playbutton text-shadow-xl hover:border-2 flex bg-gradient-to-r from-orange-400 to-orange-500 text-5xl text-center font-bold font-lobster rounded-2xl text-white shadow-zinc-800 shadow-2xl cursor-pointer hover:text-blue-500 transition 10000 border-blue-700 mx-10 w-72 mx-auto my-auto px-20 py-10"
+        >
+          Play!
+        </button>
+        <button
+          class="Rulesbutton text-shadow-xl hover:border-2 flex bg-gradient-to-r from-yellow-400 to-yellow-500 text-5xl text-center font-bold font-lobster rounded-2xl text-white shadow-zinc-800 shadow-2xl cursor-pointer hover:text-blue-500 transition 10000 border-blue-700 mx-10 w-72 mx-auto px-20 py-10"
+        >
+          Rules
+        </button>
+      </div>
+    </div>
+
+    <div class="Rulespage hidden flex flex-wrap justify-center flex-col gap-1">
+      <div
+        class="Ruletext flex flex-wrap flex-col text-center text-white bg-orange-500 py-14 px-8 mx-16 mt-8 justify-center text-5xl top-16 gap-8 text-shadow-xl font-lobster font-bold rounded-3xl"
+      >
+        <h1 class="py-7 text-8xl">How To Play</h1>
+        <p>
+          1. Both players will be given the same random number between 0 and
+          1000, and can only add, subtract, multiply, or divide by numbers from
+          0 to 9 (multiplication by 0 is not allowed).
+        </p>
+        <p>
+          2. Players can only use one arithmetic operation on their respective
+          numbers per turn.
+        </p>
+        <p>
+          3. If players perform multiply/divide in the current turn, then they
+          can only use add/subtract in their next turn and vice versa.
+        </p>
+        <p>
+          4. Both players will be given a total of 2 minutes each. The player
+          with no time left will lose.
+        </p>
+        <p class="py-8">
+          5. The player who takes their number to 50 first wins.
+        </p>
+      </div>
+      <button
+        class="Backbutton my-14 text-shadow-xl hover:border-2 flex bg-gradient-to-r from-yellow-400 to-yellow-500 text-5xl text-center font-bold font-lobster rounded-2xl text-white shadow-zinc-800 shadow-2xl cursor-pointer hover:text-blue-500 transition 10000 border-blue-700 mx-10 w-72 mx-auto px-20 py-10"
+      >
+        Back
+      </button>
+    </div>
+    <div class="hidden Gamepage flex flex-wrap flex-col">
+      <div class="Playernamesshow flex flex-wrap justify-between py-7">
+        <div
+          class="Playernameshow1 bg-gradient-to-r from-orange-600 to-orange-700 font-lobster font-bold text-6xl rounded-tr-full shadow-2xl w-128 h-32 border-black border-4 flex items-center"
+        ></div>
+        <div
+          class="Playernameshow2 bg-gradient-to-l from-blue-600 to-blue-700 font-lobster font-bold text-6xl rounded-tl-full shadow-2xl w-128 h-32 border-black border-4 text-right flex justify-end items-center"
+        ></div>
+      </div>
+      <div class="Playertimer flex justify-between">
+        <div
+          class="Playertimer1 bg-gray-800 font-digital font-bold rounded-xl text-7xl shadow-2xl w-64 h-32 border-black border-4 flex items-center mx-8 justify-center text-white"
+        >
+          30
+        </div>
+        <div
+          class="Playertimer2 bg-gray-800 font-digital font-bold rounded-xl text-7xl shadow-2xl w-64 h-32 border-black border-4 flex items-center mx-8 justify-center text-white"
+        >
+          30
+        </div>
+      </div>
+      <div
+        class="Playernumbers flex flex-wrap justify-center gap-24 relative bottom-28"
+      >
+        <div
+          class="Numberplayer1 text-11xl w-96 text-center rounded-full shadow-orange-500 shadow-2xl text-orange-600 text-shadow-xl bg-gray-700"
+        >
+          50
+        </div>
+        <div
+          class="Numberplayer2 text-11xl w-96 text-center rounded-full shadow-blue-500 shadow-2xl text-blue-600 text-shadow-xl bg-gray-700"
+        >
+          50
+        </div>
+      </div>
+      <div
+        class="Calculator flex flex-wrap justify-center relative bottom-20 gap-16 py-6"
+      >
+        <div class="Addsubtract flex flex-col gap-8 flex flex-wrap">
+          <button
+            class="obutton text-center font-lobster font-bold text-10xl bg-green-500 rounded-3xl w-64 hover:bg-green-800"
+          >
+            +
+          </button>
+          <button
+            class="obutton text-center font-lobster font-bold text-10xl bg-red-500 rounded-3xl w-64 hover:bg-red-800"
+          >
+            -
+          </button>
+        </div>
+        <div
+          class="Keypad grid grid-cols-3 grid-rows-3 gap-5 align-bottom flex flex-wrap"
+        >
+          <button
+            class="button text-8xl bg-white text-center font-lobster font-bold rounded-3xl w-32 hover:bg-gray-400"
+          >
+            1
+          </button>
+          <button
+            class="button text-8xl bg-white text-center font-lobster font-bold rounded-3xl w-32 hover:bg-gray-400"
+          >
+            2
+          </button>
+          <button
+            class="button text-8xl bg-white text-center font-lobster font-bold rounded-3xl w-32 hover:bg-gray-400"
+          >
+            3
+          </button>
+          <button
+            class="button text-8xl bg-white text-center font-lobster font-bold rounded-3xl w-32 hover:bg-gray-400"
+          >
+            4
+          </button>
+          <button
+            class="button text-8xl bg-white text-center font-lobster font-bold rounded-3xl w-32 hover:bg-gray-400"
+          >
+            5
+          </button>
+          <button
+            class="button text-8xl bg-white text-center font-lobster font-bold rounded-3xl w-32 hover:bg-gray-400"
+          >
+            6
+          </button>
+          <button
+            class="button text-8xl bg-white text-center font-lobster font-bold rounded-3xl w-32 hover:bg-gray-400"
+          >
+            7
+          </button>
+          <button
+            class="button text-8xl bg-white text-center font-lobster font-bold rounded-3xl w-32 hover:bg-gray-400"
+          >
+            8
+          </button>
+          <button
+            class="button text-8xl bg-white text-center font-lobster font-bold rounded-3xl w-32 hover:bg-gray-400"
+          >
+            9
+          </button>
+        </div>
+        <div class="Multiplydivide flex flex-col gap-8">
+          <button
+            class="obutton text-center font-lobster font-bold text-10xl bg-green-500 rounded-3xl w-64 hover:bg-green-800"
+          >
+            x
+          </button>
+          <button
+            class="obutton text-center font-lobster font-bold text-10xl bg-red-500 rounded-3xl w-64 hover:bg-red-800"
+          >
+            ÷
+          </button>
+        </div>
+      </div>
+      <button
+        class="Backbutton2 bottom-16 left-10 absolute text-shadow-xl hover:border-2 flex bg-gradient-to-r from-yellow-400 to-yellow-500 text-5xl text-center font-bold font-lobster rounded-2xl text-white shadow-zinc-800 shadow-2xl cursor-pointer hover:text-blue-500 transition 10000 border-blue-700 mx-10 w-72 mx-auto px-20 py-10"
+      >
+        Back
+      </button>
+      <div
+        class="hidden Gameoverpage flex flex-col text-center text-wrap my-80 gap-12 absolute justify-center left-72 py-14 align-middle -top-36 rounded-xl-16 p-20 text-shadow-xl text-white right-72"
+      >
+        <div class="Gameovertext text-11xl font-bold font-lobster font-digital">
+          Winner : Collium
+        </div>
+        <button
+          class="Playagainbutton text-shadow-xl hover:border-2 flex bg-gradient-to-r from-yellow-400 to-yellow-500 text-5xl text-center font-bold font-lobster rounded-2xl text-white shadow-zinc-800 shadow-2xl cursor-pointer hover:text-blue-500 transition 10000 border-blue-700 mx-10 w-72 mx-auto px-20 py-10"
+        >
+          Play Again</button
+        ><button
+          class="Mainmenubutton text-shadow-xl hover:border-2 flex bg-gradient-to-r from-orange-400 to-orange-500 text-5xl text-center font-bold font-lobster rounded-2xl text-white shadow-zinc-800 shadow-2xl cursor-pointer hover:text-blue-500 transition 10000 border-blue-700 mx-10 w-72 mx-auto my-auto px-20 py-10"
+        >
+          Main Menu
+        </button>
+      </div>
+    </div>
+
+    <footer></footer>
+    <script src="index.js"></script>
+  </body>
+</html>
